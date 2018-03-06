@@ -1,0 +1,178 @@
+/* You can add global styles to this file, and also import other style files */
+// body{
+//     padding-top:40px;
+// }
+
+@font-face {
+  font-family: "Biloxi";
+  src: url(/assets/Biloxi_Script.woff);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(/assets/raleway_thin-webfont.woff);
+}
+
+.section .section-heading {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-description {
+  color: #757575;
+  margin-bottom: 4rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hm-zoom img,
+.hm-zoom video,
+.overlay img,
+.overlay video {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.view img,
+.view video {
+  display: block;
+  position: relative;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  font-weight: 400;
+  border-radius: .3rem;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+
+.collection-card .stripe {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.collection-card .str ipe {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.collection-card .stripe.dark a p {
+  color: #eee;
+}
+
+.collection-card .stripe a p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 4px;
+  font-size: 1rem;
+}
+
+.collection-card .stripe.dark {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.collection-card .stripe.dark {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.collection-card .stripe.light {
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.collection-card .stripe.light {
+  background-color: rgba(255, 255, 255, .7);
+}
+
+h4 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn-floating {
+  padding: 5px 10px;
+  background: #fff;
+  margin: 10px 3px;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-description {
+  color: #757575;
+  margin-bottom: 4rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.section .section-heading {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+@media (min-width: 1200px) {
+  .hr-width {
+    width: 83%;
+  }
+}
+
