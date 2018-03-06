@@ -27,8 +27,8 @@ deploy:
   on:
     branch: master
 
-after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+# after_success:
+#   - firebase deploy --token $FIREBASE_TOKEN
 
 notifications:
   email:
