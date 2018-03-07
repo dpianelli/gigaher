@@ -27,8 +27,8 @@ install:
 
 script:
   - echo "*** BUILDING $NAME ***"
-  - ng build --prod --base-href="https://dpianelli.github.io/gigaher/"
-  - ngh --repo="https://$GITHUB_TOKEN@github.com/gigaher.git" --branch=gh-pages;
+  - ng build --prod --base-href=https://dpianelli.github.io/gigaher/
+  - ngh --repo=https://$GITHUB_TOKEN@github.com/gigaher.git --branch=gh-pages;
 
 deploy:
   provider: pages
