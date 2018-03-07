@@ -1,13 +1,19 @@
 <!-- Header -->
 <header>
-<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark teal lighten-3 scrolling-navbar d-flex" [containerInside]="true">
-  <links>
-    <logo class="nav navbar-nav m-auto flex-row order-2 text-center d-flex align-self-center">
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark teal lighten-3 scrolling-navbar d-flex" [containerInside]="false">
+<logo class="nav navbar-nav m-auto flex-row order-1 text-center d-flex align-self-center d-lg-none">
       <a class="logo navbar-brand" routerLink="" mdbRippleRadius>
         <img class="navbar-brand" src="../gigaher/assets/gigaher.svg" height="50" alt="logo" class="responsive">
         <strong style="font-family: Biloxi; font-size:2em">GigaHer</strong>
       </a>
-    </logo>
+</logo>
+<links>
+<logo class="nav navbar-nav m-auto flex-row order-2 text-center d-flex align-self-center d-xs-none d-sm-none d-md-none d-lg-block">
+  <a class="logo navbar-brand" routerLink="" mdbRippleRadius>
+    <img class="navbar-brand" src="../gigaher/assets/gigaher.svg" height="50" alt="logo" class="responsive">
+    <strong style="font-family: Biloxi; font-size:2em">GigaHer</strong>
+  </a>
+</logo>
     <ul class=" navbar-nav navbar-left m-auto order-1 align-self-start">
         <li class="nav-item waves-light" mdbRippleRadius>
           <a class="nav-link" routerLink="about/48">About</a>
@@ -60,7 +66,7 @@
                 <!--Footer-->
                 <footer class="page-footer font-small unique-color-dark pt-0">
                 
-                  <div style="background-color: teal;">
+                  <div class="teal lighten-3">
                     <div class="container">
                       <!--Grid row-->
                       <div class="row py-4 d-flex align-items-center">
