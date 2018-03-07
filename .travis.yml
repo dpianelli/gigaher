@@ -1,0 +1,36 @@
+#.travis.yml
+
+language: node_js
+node_js:
+  - "6.9"
+env:
+  CODECLIMATE_REPO_TOKEN: 2ba9d46263665599b1b8d2fba4f5d46723cdd0ea6efd0ef22d6dd4d13fb01777
+  
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install -g firebase-tools
+  - npm install -g @angular/cli
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  
+script:
+  - ng build --prod
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
+
+# after_success:
+#   - firebase deploy --token $FIREBASE_TOKEN
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
