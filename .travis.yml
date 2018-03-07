@@ -4,7 +4,7 @@ language: node_js
 node_js:
   - "6.9"
 env:
-  CODECLIMATE_REPO_TOKEN: 2ba9d46263665599b1b8d2fba4f5d46723cdd0ea6efd0ef22d6dd4d13fb01777
+  # CODECLIMATE_REPO_TOKEN: 2ba9d46263665599b1b8d2fba4f5d46723cdd0ea6efd0ef22d6dd4d13fb01777
   
 branches:
   only:
@@ -20,8 +20,15 @@ cache:
 #   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
 #   - chmod +x ./cc-test-reporter
   
+install:
+  - npm i --silent --no-optional -g @angular/cli
+  - npm i --silent --no-optional -g angular-cli-ghpages@0.5.2
+
+
 script:
-  - ng build.prod
+  - echo "*** BUILDING $NAME ***"
+  - ng build --prod --base-href \"https://dpianelli.github.io/gigaher/\
+  - ngh  --repo=https://$GITHUB_TOKEN@github.com/gigaher.git --name="$GITHUB_NAME" --email="$GITHUB_EMAIL" --branch=master;
 
 deploy:
   provider: pages
@@ -31,6 +38,10 @@ deploy:
   local_dir: dist
   on:
     branch: master
+
+# a build will finish as soon as a job has failed
+matrix:
+  fast_finish: true
 
 # after_success:
 #   - firebase deploy --token $FIREBASE_TOKEN
