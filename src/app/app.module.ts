@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { CoreModule } from './core/core.module';
 
 // Angular Imports
 
@@ -18,6 +19,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 // Paste in your credentials that you saved earlier
@@ -35,7 +39,10 @@ const firebaseConfig = {
     AppComponent,
     HomeComponent,
     AboutComponent,
-    BlogComponent
+    BlogComponent,
+    LoginComponent,
+    SignupComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +51,7 @@ const firebaseConfig = {
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(firebaseConfig),  // Add this
     AngularFirestoreModule,                            // And this
+    CoreModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [DataService],

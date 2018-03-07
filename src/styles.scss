@@ -39,8 +39,8 @@
 .hm-zoom video,
 .overlay img,
 .overlay video {
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .view img,
@@ -61,7 +61,7 @@ img {
 
 .card {
   font-weight: 400;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 .card {
@@ -77,8 +77,8 @@ img {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, .125);
-  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 
 .collection-card .stripe {
@@ -109,19 +109,19 @@ img {
 }
 
 .collection-card .stripe.dark {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .collection-card .stripe.dark {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .collection-card .stripe.light {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .collection-card .stripe.light {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 h4 {
@@ -161,7 +161,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 hr {
@@ -175,4 +175,30 @@ hr {
     width: 83%;
   }
 }
+.circle-icons i {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  border-radius: 50%;
+  margin: 3px;
+  border: 1px solid #e0e0e0;
+  color: #bdbdbd;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
 
+.font-small {
+  font-size: 0.8rem;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
