@@ -1,0 +1,28 @@
+.circle-icons i {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  border-radius: 50%;
+  margin: 3px;
+  border: 1px solid #e0e0e0;
+  color: #bdbdbd;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+
+.font-small {
+  font-size: .8rem;
+}
+    .font-bold {
+      font-weight: 500;
+    }
+
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+

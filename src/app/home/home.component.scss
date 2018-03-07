@@ -1,4 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
-body {
-    font-family: 'Raleway', 'Century Gothic';
+.card .card-body h4 {
+    font-family: 'Raleway';
+}
+
+.card .card-body h4 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+
+ h6 {
+   font-weight: 400;
+ }
+
+ .font-small {
+   font-size: .8rem;
+ }
+
+.archive ul li {
+  padding-top: .8rem;
+  border-top: 1px solid #eceeef;
+  padding-bottom: .3rem;
+}
+
+.spacing {
+  letter-spacing: 2px;
+}
+
+.text-hover {
+  color: #424242;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
