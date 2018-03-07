@@ -21,14 +21,14 @@ cache:
 #   - chmod +x ./cc-test-reporter
   
 install:
-  - npm i --silent --no-optional -g @angular/cl
+  - npm i --silent --no-optional -g @angular/cli
   - npm i --silent -g @angular/compiler-cli
   - npm i --silent --no-optional -g angular-cli-ghpages@0.5.2
   - npm install
 script:
   - echo "*** BUILDING $NAME ***"
   - ng build --prod --base-href="https://dpianelli.github.io/gigaher/"
-  - angular-cli-ghpages --repo=https://$GITHUB_TOKEN@github.com/gigaher.git --branch=gh-pages --message="Deploy gh pages"
+  - angular-cli-ghpages --repo=https://$GITHUB_TOKEN@github.com/dpianelli/gigaher.git --branch=gh-pages --message="Deploy gh pages"
 
 deploy:
   provider: pages
