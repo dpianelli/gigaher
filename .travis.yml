@@ -27,7 +27,7 @@ install:
 
 script:
   - echo "*** BUILDING $NAME ***"
-  - ng build --prod--aot --base-href "https://dpianelli.github.io/gigaher/"
+  - ng build --prod --aot --base-href "https://dpianelli.github.io/gigaher/"
   - angular-cli-ghpages --repo=https://$GITHUB_TOKEN@github.com/gigaher.git --branch=gh-pages --message="Deploy gh pages"
 
 deploy:
